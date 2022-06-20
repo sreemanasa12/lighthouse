@@ -1,0 +1,308 @@
+:root{
+   --dark:#3c393d;
+   --exDark:#2b2b2b;
+  
+   
+}
+*{
+    margin:0;
+    padding:0;
+  font-family: 'Roboto', sans-serif;
+
+}
+.banner{
+    width: 100%;
+    height:auto;
+  
+   background-size: cover;
+   background-position: center;
+}
+.navbar{
+   width:85%;
+   margin:auto;
+   padding:35px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ 
+
+}   
+
+.logo{
+   width:120px;
+   cursor:pointer;
+
+}
+.navbar ul li{
+   list-style: none;
+   display:inline-block;
+   margin:0 20px;
+  position: relative;
+ 
+}
+
+.navbar ul li a{
+   text-decoration: none;
+   color:rgb(201, 58, 58);
+   text-transform: uppercase;
+   width:0%;
+}
+   
+.navbar ul li:after {
+   content:'';
+   height:3px;
+   width: 0%;
+   background:#e81287;
+   position:absolute;
+   transition: 0.5s;
+   left:0;
+   bottom: -13px;
+  
+}
+.navbar ul li:hover::after{
+   width:100%;
+}
+.container{
+   max-width: 1320px;
+   margin:0 auto;
+   align-items:center;
+   flex-wrap: wrap;
+   padding:0 1.2rem;
+   justify-content: center;
+
+ 
+
+}
+.header{
+   min-height:100vh;
+
+   display:flex;
+   flex-direction:stretch;
+   justify-content: stretch;
+ 
+}
+.banner1{
+   flex:1;
+   display:flex;
+   align-items:center;
+   justify-content: center;
+   text-align:center;
+   align-items: center;
+   border-color: none;
+  
+  
+
+  
+}
+.banner-title {
+   font-size:3rem;
+   line-height:1.2;
+   height:18vh;
+   border-color: none;
+
+  
+}
+span{
+  color:rgb(217, 85, 217);
+
+
+}
+
+.banner1 form{
+   background:#f9f9f9;
+   border-radius: 2rem;
+   align-items: center;
+   padding:0.6rem 1rem;
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+.search-input{
+   font-size:1 rem;
+   width:70vh;
+   font-family: 'Courier New', Courier, monospace;
+   padding:0.6rem 4rem;
+   outline:0;
+   
+   border: none;
+   border-radius: 7px;
+ }
+.search-input::placeholder{
+   text-transform:captalize;
+  
+}
+.search-btn{
+   width:40px;
+   font-size:1.1rem;
+ 
+   border:none;
+   background:transparent;
+   outline:0;
+   border-color: none;
+    cursor:pointer;
+  
+  
+}
+.blog1{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding:40px;
+   border-bottom:1px solid rgba(0,0,0,0.5);
+  
+}
+.blog-heading{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height:40vh;
+ 
+
+}
+.blog-heading span1{
+   color: #f33c3c;
+  margin: 20px 0px;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 1.3rem;
+
+}
+.blog-heading h3{
+   font-size:2.4rem;
+   color:#2b2b2b;
+   font-weight:600;
+
+}
+.blog-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin:20px 0px;
+   flex-wrap:wrap;
+   background: #fffcf7;
+}
+.blog-box{
+   width:350px;
+   background-color:#ffffff;
+   border:1px solid #ececec;
+   margin: 20px;
+}
+.blog-img{
+   width:100%;
+   height:auto;
+}
+.blog-img img{
+   width:100%;
+   height:100%;
+   object-fit:cover;
+   object-position: center;
+}
+.blog-text{
+   padding:30px;
+   display:flex;
+   flex-direction:column;
+}
+.blog-text span{
+   color:#f33c3c;
+   font-size: 0.9rem;;
+}
+
+.blog-text span3{
+   font-weight:300;
+   display:block;
+   padding-bottom:0.5rem;
+   
+}
+
+.blog-text1 h3{
+   font-family:'Courier New', Courier, monospace;
+   padding:1rem 0;
+   font-size: 1.65rem;
+   font-weight:500;
+}
+.blog-text .blog-title{
+   font-size:1.3rem;
+   font-weight:500;
+   color:#272727;
+}
+.blog-text .blog-title:hover{
+color:#f33c3c;
+transition: all ease 0.3s;
+
+
+}
+.blog-text p{
+   color:#9b9b9b;
+   font-size:0.9rem;
+   display:--webkit-box;
+   -webkit-line-clamps:3;
+   -webkit-box-orient: vertical;
+   overflow:hidden;
+   text-overflow: ellipsis;
+   margin:20px 0px;
+}
+.blog-text a{
+   color:black;
+   
+
+}
+
+
+.blog-text a:hover{
+   color:#f33c3c;
+   transition: all ease 0.3s;
+}
+.blog-text a1{
+   font-family:'Courier New', Courier, monospace;
+   font-size: 1.1rem;
+   text-decoration: none;
+   color:var(--exDark);
+   display: inline-block;
+   background: black;
+   color:#fff;
+   padding:0.55rem 1.2rem;
+   transform:all 0.5s ease;
+
+}
+.blog-text a1:hover{
+   background: var(--exDark);
+}
+footer{
+   background:var(--exDark);
+   color:#fff;
+   text-align:center;
+   padding:2rem 0;
+}
+.social-links{
+   display:flex;
+   justify-content: center;
+   margin-bottom:1.4rem;
+}
+.social-links a{
+   border: 2px solid #fff;
+   color:#fff;
+   display: block;
+   width:40px;
+   height:40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius:50%;
+   text-decoration: none;
+   margin:0 0.3rem;
+   transition: all 0.5s ease;
+
+}
+.social-links a :hover{
+   background: #fff;
+   color:#2b2b2b;
+
+}
+.footer span3{
+   margin-top:1rem;
+   display:block;
+   font-family: 'Courier New', Courier, monospace;
+   letter-spacing: 2px;
+}

@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  
+}
+
+
+ .banner{
+     width: 100%;
+     height:auto;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width:85%;
+    height:auto;
+    margin:auto;
+    padding:35px 0;
+    display: flex;
+    align-items: center;
+ justify-content: space-between;
+}
+
+.logo{
+    width:120px;
+    cursor:pointer;
+
+}
+.navbar ul li{
+    list-style: none;
+    display:inline-block;
+    margin:0px 20px;
+   position: relative;
+   
+  
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:rgb(199, 49, 49);
+    text-transform: uppercase;
+    width:0%;
+   
+   
+}
+
+    
+.navbar ul li:after {
+    content:'';
+    height:3px;
+    width: 0%;
+    background: #e81287;
+    position:absolute;
+    transition: 0.5s;
+    left:0;
+    bottom: -13px;
+   
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+
+.Testimonials{
+    padding:40px 0;
+    background: #f1f1f1;;
+    color:#434343;
+    text-align:center;
+
+    
+}
+.inner{
+    max-width:1200px;
+    margin:auto;
+    overflow:hidden;
+    padding:0 20px;
+}
+.border{
+    width:160px;
+    height:5px;
+    background:#6ab04c;
+    margin:26px auto;
+
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.col{
+    flex:33.33%;
+    max-width:33.33%;
+    box-sizing:border-box;
+    padding:15px;
+}
+.testimonial{
+    background:#fff;
+    padding:30px;
+}
+.testimonial img{
+    width:120px;
+    height:120px;
+    border-radius: 50%;
+}
+.name{
+    font-size:20px;
+    text-transform:uppercase;
+    margin:20px 0;
+
+}
+.stars{
+    color:#6ab04c;
+    margin-bottom:20px;
+}
